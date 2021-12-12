@@ -14,6 +14,6 @@
 ## Installation
 
 ```
-$ git clone <@todo>
+$ git clone git@github.com:wesleybliss/react-base.git
 $ yarn init
 ```
