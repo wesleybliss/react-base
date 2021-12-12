@@ -16,7 +16,7 @@ const Footer = () => {
             )}>
             
             <div className="">
-                <h4 className="text-xl font-bold">
+                <h4 className="text-xl text-center font-bold">
                     SECTION
                 </h4>
                 <div className="flex flex-col justify-start items-center">
@@ -28,7 +28,7 @@ const Footer = () => {
             </div>
             
             <div className="">
-                <h4 className="text-xl font-bold">
+                <h4 className="text-xl text-center font-bold">
                     SECTION
                 </h4>
                 <div className="flex flex-col justify-center items-center">
@@ -40,7 +40,7 @@ const Footer = () => {
             </div>
             
             <div className="">
-                <h4 className="text-xl font-bold">
+                <h4 className="text-xl text-center font-bold">
                     SECTION
                 </h4>
                 <div className="flex flex-col justify-end items-center">

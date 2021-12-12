@@ -33,8 +33,8 @@ const Navbar = () => {
                 <NavLink to="/">HOME</NavLink>
                 <NavLink to="/">ABOUT</NavLink>
                 <NavLink to="/">NEWS</NavLink>
-                <NavLink to="/">PROJECTS</NavLink>
-                <NavLink to="/">COMMUNITY</NavLink>
+                <NavLink to="/">CONTACT</NavLink>
+                <NavLink to="/">HELP</NavLink>
                 
                 <ThemeToggle className={cn(
                     'flex justify-center items-center content-center',

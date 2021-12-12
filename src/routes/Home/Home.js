@@ -1,7 +1,5 @@
 import cn from 'classnames'
 
-import { Link } from 'react-router-dom'
-import { FaArrowRight } from 'react-icons/fa'
 import reactBaseImage from '@assets/images/reactbase.jpg'
 
 const Home = () => {
@@ -14,18 +12,25 @@ const Home = () => {
                 className="intro absolute top-0 left-0 right-0 w-full h-screen bg-cover bg-center -z-10"
                 style={{ backgroundImage: `url("${reactBaseImage}")` }} />
             
-            <div className="intro-fake w-full h-screen" />
+            <div className="intro-fake flex flex-col justify-center items-center content-center w-full h-screen">
+                <h4 className="mt-28 text-orange-800 text-6xl text-center font-bold font-Pacifico opacity-70">
+                    {process.env.APP_TITLE}
+                </h4>
+                <h3 className="mt-8 text-orange-800 text-5xl text-center font-bold font-Pacifico opacity-70">
+                    {process.env.APP_VERSION}
+                </h3>
+            </div>
             
             <div className="grid grid-cols-2 gap-20 mt-14 text-center">
                 
-                <div className="pt-8 text-3xl">
+                <div className="p-8 text-3xl bg-gray-100 rounded">
                     <p>LEFT SECTION</p>
                     <p className="mt-4 text-xl">
                         Pellentesque habitant morbi tristique senectus.
                     </p>
                 </div>
                 
-                <div className="pt-8 text-3xl">
+                <div className="p-8 text-3xl bg-gray-100 rounded">
                     <p>RIGHT SECTION</p>
                     <p className="mt-4 text-xl">
                         Pellentesque habitant morbi tristique senectus.
@@ -36,17 +41,17 @@ const Home = () => {
             
             <div className="grid grid-cols-3 gap-20 mt-20 p-8 text-center">
                 
-                <div className="flex flex-col">
+                <div className="flex flex-col p-8 bg-gray-200 rounded">
                     <h4 className="mb-4 text-3xl">LEFT SECTION</h4>
                     <p>Pellentesque habitant morbi.</p>
                 </div>
                 
-                <div className="flex flex-col">
+                <div className="flex flex-col p-8 bg-gray-200 rounded">
                     <h4 className="mb-4 text-3xl">CENTER SECTION</h4>
                     <p>Pellentesque habitant morbi.</p>
                 </div>
                 
-                <div className="flex flex-col">
+                <div className="flex flex-col p-8 bg-gray-200 rounded">
                     <h4 className="mb-4 text-3xl">RIGHT SECTION</h4>
                     <p>Pellentesque habitant morbi.</p>
                 </div>

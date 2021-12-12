@@ -38,7 +38,7 @@ if (prod) {
             index: true,
             publicPath: '/',
         },
-        static: path.resolve(__dirname, '../public'),
+        static: paths.public,
         historyApiFallback: true,
         open: false,
         compress: true,
