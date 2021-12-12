@@ -24,6 +24,7 @@ const updatePackage = name => {
     const src = path.resolve(__dirname, 'package.json')
     const pkg = JSON.parse(fs.readFileSync(src, 'utf8'))
     pkg.name = name.replace(/\s/, '-').toLowerCase()
+    delete pkg.scripts.init
     // console.info('Updated package', JSON.stringify(pkg, null, 4))
     fs.writeFileSync(src, JSON.stringify(pkg, null, 2), 'utf8')
 }
@@ -63,6 +64,8 @@ const main = async () => {
         await execAsync('git init')
         await execAsync('git add --all')
         await execAsync('git commit -am "Initial commit"')
+        
+        await execAsync('yarn')
         
     } catch (e) {
         

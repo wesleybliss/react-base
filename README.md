@@ -13,4 +13,7 @@
 
 ## Installation
 
-
+```
+$ git clone <@todo>
+$ yarn init
+```
