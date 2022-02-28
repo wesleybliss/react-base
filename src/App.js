@@ -9,6 +9,8 @@ import Home from '@routes/Home'
 import Navbar from '@components/Navbar'
 import Footer from '@components/Footer'
 
+// setProvider(LocalStorageProvider, NS)
+
 const App = () => {
     
     const refApp = useRef()
@@ -25,6 +27,11 @@ const App = () => {
     
     useEffect(applyTheme, [theme])
     
+    useEffect(() => {
+        window.app = {}
+        window.app.store = store
+    })
+    
     return (
         
         <Router>
@@ -32,7 +39,7 @@ const App = () => {
             <div
                 ref={refApp}
                 className={cn(
-                    'App relative',
+                    'App',
                     'w-full h-screen',
                     'flex flex-col',
                     'text-gray-800 text-xl',

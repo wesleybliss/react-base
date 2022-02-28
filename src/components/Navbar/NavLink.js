@@ -12,10 +12,9 @@ const NavLink = ({
         
         <Link
             className={cn(
-                'mx-3 px-1 pt-4',
-                'text-gray-200 hover:text-white',
-                'text-lg font-bold',
-                className,
+                'NavLink', {
+                    [className]: className,
+                }
             )}
             {...props}>
             {children}

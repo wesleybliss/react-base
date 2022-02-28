@@ -1,57 +1,53 @@
 import cn from 'classnames'
 
-import reactBaseImage from '@assets/images/reactbase.jpg'
+import './Home.css'
 
 const Home = () => {
     
     return (
         
-        <div className="Home w-full flex flex-col">
+        <div className="Home">
             
-            <div
-                className="intro absolute top-0 left-0 right-0 w-full h-screen bg-cover bg-center -z-10"
-                style={{ backgroundImage: `url("${reactBaseImage}")` }} />
-            
-            <div className="intro-fake flex flex-col justify-center items-center content-center w-full h-screen">
-                <h4 className="mt-28 text-orange-800 text-6xl text-center font-bold font-Pacifico opacity-70">
+            <div className="intro font-Pacifico">
+                <h4>
                     {process.env.APP_TITLE}
                 </h4>
-                <h3 className="mt-8 text-orange-800 text-5xl text-center font-bold font-Pacifico opacity-70">
+                <h5 className="mt-8">
                     {process.env.APP_VERSION}
-                </h3>
+                </h5>
             </div>
             
-            <div className="grid grid-cols-2 gap-20 mt-14 text-center">
+            <section className="content-first">
                 
-                <div className="p-8 text-3xl bg-gray-100 rounded">
+                <div>
                     <p>LEFT SECTION</p>
                     <p className="mt-4 text-xl">
                         Pellentesque habitant morbi tristique senectus.
                     </p>
                 </div>
                 
-                <div className="p-8 text-3xl bg-gray-100 rounded">
+                <div>
                     <p>RIGHT SECTION</p>
                     <p className="mt-4 text-xl">
                         Pellentesque habitant morbi tristique senectus.
                     </p>
                 </div>
                 
-            </div>
+            </section>
             
-            <div className="grid grid-cols-3 gap-20 mt-20 p-8 text-center">
+            <div className="content-second">
                 
-                <div className="flex flex-col p-8 bg-gray-200 rounded">
+                <div>
                     <h4 className="mb-4 text-3xl">LEFT SECTION</h4>
                     <p>Pellentesque habitant morbi.</p>
                 </div>
                 
-                <div className="flex flex-col p-8 bg-gray-200 rounded">
+                <div>
                     <h4 className="mb-4 text-3xl">CENTER SECTION</h4>
                     <p>Pellentesque habitant morbi.</p>
                 </div>
                 
-                <div className="flex flex-col p-8 bg-gray-200 rounded">
+                <div>
                     <h4 className="mb-4 text-3xl">RIGHT SECTION</h4>
                     <p>Pellentesque habitant morbi.</p>
                 </div>

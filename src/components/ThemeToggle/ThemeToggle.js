@@ -5,6 +5,8 @@ import cn from 'classnames'
 
 import { FaSun, FaMoon } from 'react-icons/fa'
 
+import './ThemeToggle.css'
+
 const ThemeToggle = ({
     className,
 }) => {
@@ -19,8 +21,8 @@ const ThemeToggle = ({
             
             <ThemeIcon
                 className={cn(
-                    'cursor-pointer', {
-                        'text-gray-800 dark:text-gray-200': !className,
+                    'ThemeToggle', {
+                        [className]: className,
                     }
                 )}
                 onClick={actions.toggleTheme} />
