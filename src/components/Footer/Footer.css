@@ -1,0 +1,25 @@
+
+.Footer {
+    
+    @apply w-full p-6;
+    @apply grid grid-cols-3 gap-10 items-center content-center;
+    @apply text-gray-200;
+    @apply bg-gray-900;
+    
+    section h4 {
+        @apply text-xl text-center font-bold;
+    }
+    
+    section div {
+        @apply flex flex-col justify-center items-center;
+    }
+    
+    section:first-child div {
+        @apply flex flex-col justify-start items-center;
+    }
+    
+    section:last-child div {
+        @apply flex flex-col justify-end items-center;
+    }
+    
+}
