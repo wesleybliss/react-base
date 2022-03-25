@@ -4,7 +4,6 @@ import { NS } from '@constants'
 import { setNamespace } from 'react-wire-persisted'
 import App from './App'
 
-import 'tailwindcss/tailwind.css'
 import './styles/index.css'
 
 setNamespace(NS)
