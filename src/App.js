@@ -3,6 +3,7 @@ import { useWireValue } from '@forminator/react-wire'
 import * as store from '@store'
 import { themes } from '@constants'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import useHMR from '@/useHMR'
 import cn from 'classnames'
 
 import Home from '@routes/Home'
@@ -25,6 +26,7 @@ const App = () => {
         document.documentElement.classList.add(theme)
     }
     
+    useHMR()
     useEffect(applyTheme, [theme])
     
     useEffect(() => {

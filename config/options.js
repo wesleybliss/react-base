@@ -95,7 +95,15 @@ options.development = {
     ...options.shared,
     sourcemap: true,
     minify: false,
-    watch: true,
+    // watch: true,
+    /* watch: {
+        onRebuild(error) {
+            setTimeout(() => {
+                clients.forEach(res => res.write('data: update\n\n'))
+            }, 1000)
+            console.log(error || 'Client rebuilt')
+        },
+    } */
 }
 
 options.production = {

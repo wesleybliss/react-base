@@ -11,6 +11,8 @@ const aliases = [
 ].reduce((acc, it) => ({
     ...acc,
     [`@${it}`]: path.resolve(__dirname, '../src', it),
-}), {})
+}), {
+    '@': path.resolve(__dirname, '../src'),
+})
 
 module.exports = aliases
